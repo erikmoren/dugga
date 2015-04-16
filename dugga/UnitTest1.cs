@@ -138,5 +138,20 @@ namespace dugga
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void Convert55kto55000()
+        {
+            //Arrange
+            string value = "55k";
+            long expected = 55000;
+
+            //Act
+            long actual = sc.Convert(value);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+
     }
 }
