@@ -10,6 +10,15 @@ namespace dugga
     {
         public long Convert(string str)
         {
+            //Strip whitespaces
+            str = str.Trim();
+            
+            //Check if we have empty string
+            if (String.IsNullOrEmpty(str))
+            {
+                return -1;
+            }
+
             //Convert to lower case. Always work with lower case from now on.
             str = str.ToLower();
 
@@ -17,13 +26,15 @@ namespace dugga
             var letters = new String(str.Where(Char.IsLetter).ToArray());
             string digitsStr = new String(str.Where(Char.IsDigit).ToArray());
 
+            //Init digits to 1 in case we do not have any characters in our string
             long digits = 1;
     
             //Convert our digitsStr string to our digits (if we have any digits...)
             if (digitsStr.Length > 1) 
             {
                 bool res = long.TryParse(digitsStr, out digits);
-                //FIXME: Check result
+                if (res == false)
+                    return -1;  //TryParse failed.
             }
                      
             //Make sure we have one or zero letters.
