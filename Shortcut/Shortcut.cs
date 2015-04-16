@@ -17,7 +17,6 @@ namespace dugga
             var letters = new String(str.Where(Char.IsLetter).ToArray());
             string digitsStr = new String(str.Where(Char.IsDigit).ToArray());
 
-    
             long digits = 1;
     
             //Convert our digitsStr string to our digits (if we have any digits...)
