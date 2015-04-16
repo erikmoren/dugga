@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace dugga
 {
     [TestClass]
-    public class UnitTest1
+    public class DuggaTest
     {
         private Shortcut sc = new Shortcut();
 
