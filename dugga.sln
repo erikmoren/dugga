@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dugga", "dugga\dugga.csproj", "{2782803E-E167-44CF-8AE5-EC782E442DC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dugga.Test", "dugga\Dugga.Test.csproj", "{2782803E-E167-44CF-8AE5-EC782E442DC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortcut", "Shortcut\Shortcut.csproj", "{FE6CA1E9-4656-4EEC-ADEE-21C238B188B1}"
 EndProject
