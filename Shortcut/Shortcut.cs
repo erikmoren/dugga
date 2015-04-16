@@ -55,10 +55,6 @@ namespace dugga
             string temp = digitsStr + letters;
             if (temp != str) return -1;
 
-            //If we have only digits, return them.
-            if (letters.Length == 0)
-                return digits;
-
             long result = 0;
 
             //Do the conversion
@@ -76,6 +72,12 @@ namespace dugga
                 case "t":
                     result = digits * 1000000000000;
                     break;
+
+                //If we have only digits, return them.
+                default: 
+                    result = digits;
+                    break;
+
             }
 
             return result;
